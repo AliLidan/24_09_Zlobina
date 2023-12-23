@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.542" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_log"
         android:layout_width="277dp"
         android:layout_height="59dp"
         android:background="@drawable/btn_clolr"
@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.684" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btn_house"
         android:layout_width="225dp"
         android:layout_height="208dp"
         android:scaleType="fitCenter"

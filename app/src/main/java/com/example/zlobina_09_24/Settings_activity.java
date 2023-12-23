@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.Toast;
 
@@ -26,7 +25,7 @@ public class Settings_activity extends AppCompatActivity {
         ch1 = findViewById(R.id.switch1);
         ch2 = findViewById(R.id.switch2);
         ch3 = findViewById(R.id.switch3);
-        btn = findViewById(R.id.imageButton4);
+        btn = findViewById(R.id.image_backing);
         bac = findViewById(R.id.backintent);
     }
 
@@ -46,7 +45,7 @@ public class Settings_activity extends AppCompatActivity {
 
     public void onClicked(View v) {
         switch (v.getId()) {
-            case R.id.imageButton4:
+            case R.id.image_backing:
                 Intent intent = new Intent(this, Perconal_area_acrivity.class);
                 startActivity(intent);
                 break;
