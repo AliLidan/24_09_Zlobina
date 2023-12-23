@@ -7,7 +7,7 @@
     tools:context=".Perconal_area_acrivity">
 
     <TextView
-        android:id="@+id/textView77"
+        android:id="@+id/tv_header"
         android:layout_width="181dp"
         android:layout_height="39dp"
         android:gravity="center"
@@ -20,24 +20,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/back_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        app:layout_constraintEnd_toStartOf="@+id/textView77"
+        app:layout_constraintEnd_toStartOf="@+id/tv_header"
         app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/share_ios_export" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/settings_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.761"
-        app:layout_constraintStart_toEndOf="@+id/textView77"
+        app:layout_constraintStart_toEndOf="@+id/tv_header"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/settings" />
 
@@ -51,18 +51,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user"
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_buy"
             android:layout_width="190dp"
             android:layout_height="69dp"
             android:gravity="center"
             android:text="Купить" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btn_sell"
             android:layout_width="178dp"
             android:layout_height="69dp"
             android:gravity="center"
@@ -71,7 +71,7 @@
     </TableRow>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_camera"
         android:layout_width="327dp"
         android:layout_height="81dp"
         android:background="@drawable/btn_clolr"
@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.041" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_hi"
         android:layout_width="57dp"
         android:layout_height="37dp"
         android:layout_marginStart="16dp"
@@ -97,18 +97,17 @@
         app:layout_constraintVertical_bias="0.714" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_user"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="28dp"
-        android:text="TextView"
         android:textSize="34sp"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+        app:layout_constraintStart_toEndOf="@+id/tv_hi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_sold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ваша последняя публикация"
@@ -119,7 +118,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_camera"
         app:layout_constraintVertical_bias="0.182" />
 
     <LinearLayout
@@ -132,24 +131,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sold"
         app:layout_constraintVertical_bias="0.158">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/image_sell"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/rectangle" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tv_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="45dp"
             android:text="22 декабря, в 11:2" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tv_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="12dp"

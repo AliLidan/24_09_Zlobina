@@ -6,7 +6,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -28,12 +27,12 @@ public class Perconal_area_acrivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_perconal_area);
 
-        photo = findViewById(R.id.button2);
+        photo = findViewById(R.id.btn_camera);
 
-        btnback = findViewById(R.id.imageButton);
-        btn = findViewById(R.id.imageButton2);
+        btnback = findViewById(R.id.back_image);
+        btn = findViewById(R.id.settings_image);
 
-        textView = findViewById(R.id.textView);
+        textView = findViewById(R.id.tv_user);
         db_helper = new DB_helper(this);
         db = db_helper.getReadableDatabase();
 
@@ -54,17 +53,17 @@ public class Perconal_area_acrivity extends AppCompatActivity {
     public void onClick (View v)
     {
         switch (v.getId()){
-            case R.id.button2: // camera
+            case R.id.btn_camera: // camera
                 Intent intent2 = new Intent("android.media.action.IMAGE_CAPTURE");
                 startActivity(intent2);
                 break;
 
-            case R.id.imageButton: // back
+            case R.id.back_image: // back
                 Intent intent = new Intent(this, Login_activity.class );
                 startActivity(intent);
                 break;
 
-            case R.id.imageButton2: // menu-settings
+            case R.id.settings_image: // menu-settings
                 Intent intent3 = new Intent(this, Settings_activity.class );
                 startActivity(intent3);
                 break;
