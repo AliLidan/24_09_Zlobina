@@ -49,7 +49,7 @@ public class Settings_activity extends AppCompatActivity {
                 Intent intent = new Intent(this, Perconal_area_acrivity.class);
                 startActivity(intent);
                 break;
-            case R.id.button3:
+            case R.id.btn_spros:
                 ch1.setChecked(false);
                 ch2.setChecked(false);
                 ch3.setChecked(false);
